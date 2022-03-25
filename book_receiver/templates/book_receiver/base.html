@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa&subset=latin,cyrillic">
+      <link rel="stylesheet" type="text/css" href= "{% static 'css/styles.css' %}">
+
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <nav class="navbar fixed-top navbar-expand-md">
+        <div class="container">
+	         <button class="navbar-dark navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  			</button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" >
+
+                    <li class="nav-item">
+                        <a class="nav-link scroll-link" href= "{% url 'book_receiver:main' %}">Главная</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link scroll-link" href="{% url 'book_receiver:catalog' %}">Каталог</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link scroll-link" href="{% url 'book_receiver:donations' %}">Донаты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+	</nav>
+<br>
+<br>
+<br>
+{% block content %}{% endblock %}
+</body>
+<footer>
+    <div class="navbar fixed-bottom"><p></p></div>
+</footer>
+</html>

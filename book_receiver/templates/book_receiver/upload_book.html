@@ -1,0 +1,12 @@
+{% extends "book_receiver/base.html" %}
+
+{% block title %}Загрузить книгу - BookHolder{% endblock %}
+
+{% block content %}
+    <h1>Загрузи книгу</h1>
+    <form action="." method="post" enctype="multipart/form-data">
+        {{ form.as_p }}
+        {% csrf_token %}
+    <input type="submit" value="Загрузить!">
+    </form>
+{% endblock %}

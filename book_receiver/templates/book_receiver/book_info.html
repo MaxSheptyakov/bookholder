@@ -1,0 +1,29 @@
+{% extends "book_receiver/base.html" %}
+
+{% block title %}Информация о книге - BookHolder{% endblock %}
+
+{% block content %}
+    <div class="container text-item">
+    <div class="row">
+        <h1>Информация о книге {{ book.title }}</h1>
+    </div>
+    <div class="row">
+        <p>Название: {{ book.title }}</p>
+    </div>
+    <div class="row">
+        <p>Автор: {{ book.author }}</p>
+    </div>
+    <div class="row">
+        <p>Жанры книги: {% for book_type in book.book_types.all %}
+            {% if forloop.last %}
+            {{ book_type.get_book_type_display }}
+            {% else %}
+            {{ book_type.get_book_type_display }},
+            {% endif %}
+        {% endfor %}</p>
+    </div>
+    <div class="row">
+        <a href="{{ book.url }}">Скачать книгу!</a>
+    </div>
+    </div>
+{% endblock %}

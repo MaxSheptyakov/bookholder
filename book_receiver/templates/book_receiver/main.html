@@ -1,0 +1,17 @@
+{% extends "book_receiver/base.html" %}
+
+{% block title %}Главная - BookHolder{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 text-item">
+            <p>Привет! Это сайт, на котором хранятся книги!
+            <a href="{% url 'book_receiver:add_book' %}">Добавь свою книгу!</a>
+            </p>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "book_receiver/base.html" %}
+
+{% block title %}Каталог - BookHolder{% endblock %}
+
+{% block content %}
+    <div class="container text-item">
+    <div class="row">
+        {% for book_type in book_types %}
+            <div class="col-6">
+            <h4>{{ book_type.get_book_type_display }}</h4>
+            {% for book in book_type.books.all %}
+                {% if book.slug %}
+                <a href="{{ book.get_absolute_url }}">{{ book.title }}</a><br>
+                {% endif %}
+            {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,224 @@
+html {
+	scroll-padding-top: 65px;
+}
+
+body {
+    padding-top: 55px;
+
+}
+
+a:hover {
+	text-decoration: none !important;
+}
+/* Navbar */
+.navbar-brand {
+	font-family:  'Comfortaa-regular', serif;
+	font-weight: bold;
+	color: snow;
+}
+
+.nav-img {
+	height: 40px;
+}
+.navbar {
+	background-color: #f8b189;
+}
+
+.nav-item, .scroll-link, .navbar-collapse{
+	font-family: 'Comfortaa', serif, monospace;
+	color: snow;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.nav-item:hover, .scroll-link:hover, .navbar-collapse:hover, .navbar-brand:hover {
+	color: #ffd9d9;
+}
+
+.text-item{
+	font-family: 'Comfortaa', serif, monospace;
+	color: grey;
+	font-size: 1rem;
+	font-weight: normal;
+}
+
+
+/* Generic */
+.title {
+	font-family: 'Comfortaa-regular', serif, monospace;
+	font-size: 3rem;
+	font-weight: bold;
+	color: #f8b188;
+	text-shadow: 1.5px 1.5px #d97568;
+}
+
+
+.description {
+	font-family: 'Comfortaa-regular', serif, monospace;
+	font-size: 1.8rem;
+	line-height: 1.9rem;
+	text-align: center;
+	font-weight: 600;
+	color: gray;
+}
+
+/* Top Picture */
+.top-picture{
+	height: 42rem;
+	overflow-x: hidden;
+}
+
+.top-text{
+	padding: 2%;
+}
+
+.top-title {
+	font-family: 'Comfortaa-regular', serif, monospace;
+	font-size: 7rem;
+	font-weight: bold;
+	color: snow;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 5rem;
+	text-shadow: 5px 5px lightgray;
+}
+
+.top-body{
+	color: snow;
+	font-size: 0.8rem;
+}
+
+.top-img {
+	max-width: auto;
+	max-height: auto;
+	overflow: hidden;
+}
+
+/* About me */
+.about-content {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+/* What do I do */
+.what-content {
+	padding-bottom: 2rem;
+}
+.what-subtitle {
+	font-family:  'Comfortaa-regular', serif, monospace;
+	font-size: 2.2rem;
+	font-weight: bold;
+	text-align: left;
+	text-shadow: 1.5px 1.5px #017d6c;
+}
+.what-description {
+	text-align: left;
+}
+.what-img {
+	padding-top: 1.5rem;
+	width: 100%;
+	height:auto ;
+}
+/* Projects */
+.project-col {
+	height: 80%;
+}
+
+.project-card {
+	width: auto;
+	text-align: center;
+	text-decoration: none;
+	filter: saturate(20%);
+	transition: 2s;
+}
+.project-card:hover {
+	transition-duration: 1s;
+	filter: saturate(90%);
+	padding: 1.25%;
+}
+.project-card-1 {
+	background-color: #F0386B
+}
+.project-card-2 {
+	background-color: #87BBA2
+
+}
+.project-card-3{
+	background-color: #06BCC1
+}
+
+.project-card-title {
+	font-size: 2rem;
+	color: snow;
+	font-weight: bold;
+	text-shadow: 1.5px 1.5px gray;
+
+}
+
+.project-card-title:hover {
+	text-decoration: none;
+	color: #EAFFDA ;
+}
+
+.project-description {
+	color: snow;
+	display: center;
+}
+
+/* Blog-index */
+.blog-title {
+	text-align: left;
+	font-size: 2.2rem;
+	transition: 0.25s;
+
+}
+.blog-title:hover {
+	color: #f89588;
+	transition: 0.05s;
+}
+
+.blog-desc {
+	text-align: left;
+	font-size: 1.2rem;
+}
+
+/* Blog post */
+.post-title {
+	text-align: left;
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.post-about {
+	font-size: 1.1rem;
+	color: gray;
+}
+
+.post-body {
+	font-family: 'Comfortaa-regular', serif, monospace;
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+	text-align: left;
+}
+
+.blog-back {
+	color: lightgray;
+	text-shadow: 1.2px 1.2px gray
+}
+
+.blog-back:hover {
+	color: gray;
+	text-decoration: none;
+}
+/* Webapp */
+
+.webapp-title {
+	font-family: 'Comfortaa-regular', serif, monospace;
+	font-size: 2rem;
+	line-height: 1.2rem;
+	text-align: left;
+}
+
+.webapp-card {
+	padding: 5%;
+}
